@@ -1,0 +1,12 @@
+#divisible
+def is_divisible_by_10(n, arr):
+    last_digit = arr[-1] % 10
+    if last_digit == 0:
+        return "Yes"
+    else:
+        return "No"
+
+n = int(input())
+arr = list(map(int, input().split()))
+
+print(is_divisible_by_10(n, arr))
